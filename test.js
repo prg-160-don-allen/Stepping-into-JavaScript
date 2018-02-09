@@ -1,34 +1,19 @@
-// 5 number average function
-function getAverage (a,b,c,d,e){
+var average = 0;	//Global variable
+
+function getAverage (a,b){
 	
-	var average = (a + b + c + d + e) / 5;
+	average = (a + b) / 2;
+	console.log(average);
 	return average;
 	
 }
 
-var myResult = getAverage(21,7,56,99,46);
-console.log("the average is " + myResult);
+var myResult = getAverage(7,11);  //Global variable
 
-
-// 2 number difference function
-function getDiff (a,b){
+function logResult(){
 	
-	var diff = (a - b);
-	return diff;
+	console.log("the average is " + myResult + " inside the function");
 	
 }
 
-var myDiff = getDiff(42,22);
-console.log("the difference is " + myDiff);
-
-
-// Combine 2 strings function
-function donAllen (a,b){
-	
-	var longString = (a + b);
-	return longString;
-			
-}
-
-	var myString = donAllen('Go ', 'Eagles!!');
-	console.log("What I have to say is: " + myString);
+logResult()
