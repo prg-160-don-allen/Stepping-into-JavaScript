@@ -44,8 +44,8 @@ console.log(drinkAge(20.99))
 
 function counting(n){
 	
-	if (n > 0){
-	for (var x = 1; x < n; x++) {
+	if (n > 0){   // Eliminate negative numbers
+	for (var x = 1; x < n; x++) { // Count to console until you reach the number specified
 		console.log(x);
 	}
 	
@@ -56,4 +56,22 @@ function counting(n){
 console.log(counting(8))
 
 // ***************************************
+// Write to Screen after Check Function
+
+function numCheck(num){
+	
+	if (num >= 17 && num <= 21){ // Check for numbers 17 to 21
+		
+		document.write("You should probably hold.");
+		return true;
+	} 
+		// If numbers not between 17 and 21
+	document.write("You should take a hit or it's already too late.");
+	return false;
+}
+console.log(numCheck(22))
+
+// *****************************************
+
+
 
