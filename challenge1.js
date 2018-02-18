@@ -1,7 +1,7 @@
 // JavaScript Document
 // Prime Number Test Function
 
-function test_prime(n) {
+function primeNumTest(n) {
 
 	if (n === 1) {		// Eliminate # 1
 		return false;
@@ -10,7 +10,7 @@ function test_prime(n) {
 	} else {
 		for (var x = 2; x < n; x++) {  // Check numbers greater than 2
 			console.log(x);  // Show each number as it is checked
-			if (n % x === 0) {  // Eliminate all non-prime numbers
+			if (n % x === 0) {  // Eliminate all non-prime numbers when modulus is zero
 				console.log(n + " is NOT a prime number");
 				return false;
 			}
@@ -20,5 +20,21 @@ function test_prime(n) {
 	}
 }
 
-console.log(test_prime(9))
+console.log(primeNumTest(9))
+
+// Check Pennsylvania Drinking Age Function
+
+function drinkAge(age) {
+	
+	if (age >= 21) { // Check for valid age
+		
+		console.log("You are old enough to legally drink alcohol in Pennsylvania.  Please do so with care.");
+		return true;
+		
+	}	//  Age is not old enough
+	console.log("You are NOT old enough to drink legally in Pennsylvania.");
+	return false;
+}
+
+console.log(drinkAge(20.99))
 
