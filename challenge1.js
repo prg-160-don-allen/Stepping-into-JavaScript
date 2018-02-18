@@ -1,6 +1,6 @@
 // JavaScript Document
 // Prime Number Test Function
-
+"use strict";
 function primeNumTest(n) {
 
 	if (n === 1) {		// Eliminate # 1
@@ -22,6 +22,7 @@ function primeNumTest(n) {
 
 console.log(primeNumTest(9))
 
+// ***************************************
 // Check Pennsylvania Drinking Age Function
 
 function drinkAge(age) {
@@ -37,4 +38,22 @@ function drinkAge(age) {
 }
 
 console.log(drinkAge(20.99))
+
+// ***************************************
+// Console Count Function
+
+function counting(n){
+	
+	if (n > 0){
+	for (var x = 1; x < n; x++) {
+		console.log(x);
+	}
+	
+	return true;
+	}
+	return false;
+}
+console.log(counting(8))
+
+// ***************************************
 
